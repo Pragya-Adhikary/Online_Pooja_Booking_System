@@ -1,0 +1,134 @@
+/* ONLINE STATUS */
+.online-dot {
+  color: #4caf50;
+  font-size: 14px;
+}
+
+/* SIDEBAR */
+.pandit-sidebar {
+  width: 220px;
+  background: linear-gradient(180deg, #fffaf5, #ffeede);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #eee;
+}
+
+/* SIDEBAR LINKS */
+.pandit-sidebar a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.pandit-sidebar a:hover {
+  background: #ffe3c8;
+  color: #000;
+  transform: translateX(3px);
+}
+
+/* LOGOUT BUTTON (FIXED) */
+.pandit-logout-btn {
+  padding: 6px 12px;          /* ⬅ reduced */
+  height: 36px;              /* ⬅ matches avatar button */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ff8c42, #ff5e00);
+  color: white;
+  display: flex;             /* ⬅ alignment fix */
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.pandit-logout-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* STAT CARD */
+.stat-card {
+  background: linear-gradient(to bottom, #ffffff, #fff3e6);
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+/* TOP BAR */
+.pandit-topbar {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  border-bottom: 1px solid #e5e5e5;
+  background: #ffad6a;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* BRAND */
+.pandit-brand {
+  font-weight: 700;
+  font-size: 17px;
+  color: #222;
+}
+
+/* TOPBAR RIGHT */
+.pandit-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* AVATAR BUTTON (FIXED HEIGHT MATCH) */
+/* 🔒 FORCE avatar button size */
+.pandit-avatar-btn {
+  height: auto;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  background-color: #ffad6a;
+  gap: 5px;
+}
+
+/* 🔒 FORCE image size (override global img rules) */
+.pandit-avatar {
+  width: 50px !important;
+  height: 50px !important;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ff8c42;
+}
+
+/* ❌ REMOVE any background circle */
+.pandit-avatar-btn img {
+  background: transparent !important;
+}
+
+
+/* NAME */
+.pandit-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}

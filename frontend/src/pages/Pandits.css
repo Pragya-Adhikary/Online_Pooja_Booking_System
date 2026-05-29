@@ -1,0 +1,148 @@
+/* 🌸 Section */
+.pandits-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff4eb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pandits-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.pandits-subtitle {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 40px;
+}
+
+/* 🌸 Grid */
+.pandits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* 🌸 Card */
+.pandit-card {
+  background: linear-gradient(to bottom, #fff9f5, #ffeede);
+  border-radius: 14px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.pandit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* 🧱 FIXED IMAGE SPACE */
+.pandit-image-wrapper {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  background: #f1e6dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+/* 🖼 Image */
+.pandit-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Placeholder behavior */
+.pandit-image[src*="pandit-default"] {
+  object-fit: contain;
+  padding: 30px;
+}
+
+/* 🌸 Details */
+.pandit-details {
+  flex: 1;
+}
+
+.pandit-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 8px 0;
+  color: black;
+}
+
+.pandit-experience {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+/* ⭐ Rating */
+.pandit-rating {
+  color: #ff9800;
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+/* 🌸 Specializations */
+.pandit-specializations {
+  margin: 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.specialty-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #fff3e6;
+  border: 1px solid #ffd7b5;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+}
+
+.specialty-icon {
+  font-size: 15px;
+  color: #ff7300;
+}
+
+/* 🌸 Footer */
+.pandit-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.call-btn,
+.book-btn {
+  background: linear-gradient(90deg, #ff8c42, #ff5e00);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.call-btn:hover,
+.book-btn:hover {
+  transform: scale(1.05);
+}
